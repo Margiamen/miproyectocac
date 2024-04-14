@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 24-03-24</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/Logoico.ico">
+    <script src="https://kit.fontawesome.com/8dfe046610.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="header1" src="images/Logo sin fondo.png" alt="Logo cine">
+        <div class="Container">
+            <input class="Barra" type="text" placeholder="Buscar">
+            <div class="Barra-principal">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <h6 class="subtitulo">Busca lo que quieras, Cuando quieras!</h6>
+        <h2 class="titulobuscador">CineFan hecho para Fans</h2>
+
+
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#cartelera">Cartelera</a></li>
+            <li><a href="#club">Club cinefilos</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#streaming">Streaming</a></li>
+            <li><a href="#trailers">Trailers</a></li>
+            <li><a href="#series">Series</a></li>
+            <li><a href="#cinekids">Cine kids</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#micuenta">Mi Cuenta</a></li>
+        </ul>
+    </div>
+
+    <div class="titulo">
+        CAC de Cine
+
+    </div>
+    <div class="texto">
+        <article>
+            <section id="cartelera" class="cartelera-section">
+                <h2>Cartelera</h2>
+                <div class="cartelera">
+                    <a href="https://www.youtube.com/watch?v=U0LETmDvuXc" target="_blank"><button title="Scream"><img src="images/SCREAM.jpg" alt="Thor"></button></a>
+                    <a href="https://www.youtube.com/watch?v=bzLn8sYeM9o" target="_blank"><button title="Donnie Darko"><img src="images/DONNIE DARKO.jpg" alt="Donnie Darko"></button></a>
+                    <a href="https://www.youtube.com/watch?v=StCN_4qWfWE" target="_blank"><button title="Mushishi"><img src="images/MUSHISHI (REPUESTO).jpg" alt="Mushishi"></button></a>
+                    <a href="https://www.youtube.com/watch?v=XZG1FzyB8DI"><button title="Into the Wild"><img src="images/INTO THE WILD.jpg" alt="Into the Wilde"></button></a>
+                    <a href="https://youtu.be/Hlb-D7csQBQ" target="_blank"><button title="Mulan"><img src="images/MULAN.jpg" alt="Mulan"></button></a>
+                    <a href="https://youtu.be/tFMo3UJ4B4g" target="_blank"><button title="Arrival"><img src="images/ARRIVAL.jpg" alt="Arrival"></button></a>
+                    <a href="https://youtu.be/In8fuzj3gck" target="_blank"><button title="NOPE"><img src="images/NOPE.jpg" alt="NOPE"></button></a>
+                    <a href="https://youtu.be/xxG-YfedrfU" target="_blank"><button title="Predestination"><img src="images/PREDESTINATION.jpg" alt="Predestination"></button></a>
+                    <a href="https://youtu.be/kZfFvsKDuUU" target="_blank"><button title="Pride"><img src="images/PRIDE.jpg" alt="Pride"></button></a>
+                    <a href="https://youtu.be/s46HWMCLZug" target="_blank"><button title="Revolver"><img src="images/REVOLVER.jpg" alt="Revolver"></button></a>
+                    <a href="https://www.youtube.com/watch?v=OTn5XUFP_iA" target="_blank"><button title="The Fall"><img src="images/THE FALL (REPUESTO).jpg" alt="The Fall"></button></a>
+                    <a href="https://youtu.be/mctdeCb9Dro" target="_blank"><button title="The Matrix"><img src="images/THE MATRIX.jpg" alt="The Matrix"></button></a>
+                    <a href="https://youtu.be/fQNZhs0QKq0" target="_blank"><button title="BlacKkKlansman"><img src="images/BBLACKKKLANSMAN.png" alt="BlacKkKlansman"></button></a>
+                    <a href="https://youtu.be/M7XM597XO94" target="_blank"><button title="John Wick 3"><img src="images/JOHN WICK 3_ PARABELLUM.jpg" alt="John Wick 3"></button></a>
+                    <a href="https://youtu.be/d-TdAi4FW-Y" target="_blank"><button title="JoJo Rabitt"><img src="images/JOJO RABBIT.jpg" alt="JoJo Rabbit"></button></a>
+                </div>
+                <br>
+                <h3>Busca Tu Cine y compra las entradas</h3>
+                <form action="get">
+                    <div>
+                        <select name="cines" id="cines">
+                            <option value="1">Buenos Aires</option>
+                            <option value="2">CABA</option>
+                            <option value="3">Catamarca</option>
+                            <option value="4">Chaco</option>
+                            <option value="5">Chubut</option>
+                            <option value="6">Córdoba</option>
+                            <option value="7">Corrientes</option>
+                            <option value="8">Entre Ríos</option>
+                            <option value="9">Formosa</option>
+                            <option value="10">Jujuy</option>
+                            <option value="11">La Pampa</option>
+                            <option value="12">La Rioja</option>
+                            <option value="13">Mendoza</option>
+                            <option value="14">Misiones</option>
+                            <option value="15">Neuquén</option>
+                            <option value="16">Río Negro</option>
+                            <option value="17">Salta</option>
+                            <option value="18">San Juan</option>
+                            <option value="19">San Luis</option>
+                            <option value="20">Santa Cruz</option>
+                            <option value="21">Santa Fe</option>
+                            <option value="22">Santiago del Estero</option>
+                            <option value="23">Tierra del Fuego</option>
+                            <option value="24">Tucumán</option>
+                        </select>
+                        <button type="submit">Buscar</button>
+                    </div>
+                </form>
+            </section>
+            <br>
+            <section id="club" class="club-section">
+                <h3>CLUB CINEFILOS</h3>
+                <div class="cinefilos">
+                    <div class="card">
+                        <figure>
+                            <img src="/images/Recomendada.jpg" alt="">
+                        </figure>
+                        <div class="contenidocard">
+                            <h3>RECOMENDADOS</h3>
+                            <p>Las peliculas mas recomendadas y vistas del mundo recopiladas en un solo sitio para que te enteres de todo
+                            </p>
+                            <a href="https://cinefilosoficial.com/category/especiales/recomendaciones/" target="_blank"> Leer mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="/images/Entrevista.jpg" alt="">
+                        </figure>
+                        <div class="contenidocard">
+                            <h3>ENTREVISTAS</h3>
+                            <p>entrevistas con tus artistas favoritos, para que conozcas la parte mas humana de cada uno de ellos..
+                            </p>
+                            <a href="https://cinefilosoficial.com/category/entrevistas/" target="_blank"> Leer mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="/images/Novedades.jpg" alt="">
+                        </figure>
+                        <div class="contenidocard">
+                            <h3>NOVEDADES</h3>
+                            <p>Actualizamos cada dia las noticias mas relevantes del mundo del cine aso como los estrenos mas esperados.
+                            </p>
+                            <a href="https://cinefilosoficial.com/category/novedades/" target="_blank"> Leer mas</a>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <br>
+            <section id="noticias" class="noticias-section">
+                <H3>Noticias</H3>
+                <p>Lo nuevo</p>
+                <div class="noticias">
+                    <div class="card">  
+                        <figure>
+                            <div><img src="/images/noticia1.webp"  alt="" >
+                        </figure>
+                        <br>
+                        <div class="contenidocard">
+                            <h3>Una película dispuesta a todo para dejarte boquiabierto”: así es ‘Sangre en los labios’, la nueva locura de Kristen Stewart</p>
+                            <p>Había ganas de que se estrenara en cines una película como Sangre en los labios, sinceramente. Una historia de las que parece que ya no se hacen, ultraviolenta, adulta, con un guion original y que no teme estrenarse en los EE. UU. con calificación R, es decir, que los menores de 17 años no pueden entrar a no ser que vayan acompañados.</p></div>
+                        </div>
+                    </div>
+                    <div class="card">  
+                        <figure>
+                            <div><img src="/images/noticia2.webp"  alt="">
+                        </figure>
+                        <br>
+                        <div class="contenidocard">
+                            <h3>Muere a los 27 años Cole Brings Plenty </h3>
+                            <p>Muere a los 27 años Cole Brings Plenty, actor del 'spin-off' de 'Yellowstone': “Nos gustaría agradecer a todos los que nos acompañaron mientras buscábamos a mi hijo”</p></div>
+                    </div>
+                </div>   
+                    </div>
+                    <div class="card">  
+                        <figure>
+                            <div><img src="/images/noticia3.webp"  alt="">
+                        </figure>
+                        <br>
+                        <div class="contenidocard">
+                            <h3>La sorprendente cancelación de una de las prometedoras series de ciencia ficción: Viajes en el tiempo y secuela de una mítica de los 80</h3>
+                            <p>A pesar de ser una de las series de ciencia ficción más prometedoras de los últimos años, NBC ha decidido cancelar Quantum Leap tras dos temporadas, dejándola así sin una esperada temporada 3</p></div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="streaming" class="streaming-section">
+                <h3>Streaming</h3>
+                <p>Accede a los contenidos del catálogo de tu plataforma favorita </p>
+                <div class="streaming">
+                    <img src="images/Netflix (1).jpg" alt="Netflix">
+                    <img src="images/Cine.AR.jpg" alt="Cine.AR">
+                    <img src="images/Prime Video.jpg" alt="Prime Video">
+                    <img src="images/Disney+.jpg" alt="Disney+">
+                    <img src="images/MUBI.jpg" alt="Mubi">
+                    <img src="images/Max.jpg" alt="HBO+">
+                </div>
+                <br>
+            </section>
+            <section id="trailers" class="trailers-section">
+                <h3>Trailers</h3>
+                <p>Tráilers de películas</p>
+                <div div class="trailers1">
+                    <img src="/images/barbie.webp" alt="">
+                    <h3>La pelicula de Barbie</h3>
+                    <img src="/images/hunger.webp" alt="">
+                    <h3>Hunger</h3>
+                    <img src="/images/theycloned.webp" alt="">
+                    <h3>they cloned</h3>
+                </div>
+            </section>
+            <br>
+            <section id="series" class="series-section">
+                <h3>Series</h3>
+               
+            </section>
+            <br>
+            <section id="cinekids" class="cinekids-section">
+                <h3>Cine kids</h3>
+            
+                <div class="cinekids">
+                    <div>
+                    <img src="/images/myfamilykids.jpg" class="img-1" alt="">
+                    <h4>My family</h4>
+                    <img src="/images/mounstrodelmar.jpg" class="img-2" alt="">
+                    <h4>mounstro del mar</h4>
+                    <img src="/images/vivokids.jpg" class="img-3" alt="">
+                    <h4>VIVO</h4>
+                    </div>
+                    <div>
+                        <img src="/images/pinochokids.jpg" class="img-4" alt="">
+                        <h4>Pinocho</h4>
+                        <img src="/images/elementalkids.jpg" class="img-5" alt="">
+                        <h4>Elemental</h4>
+                        <img src="/images/intensamente.jpg" class="img-6" alt="">
+                        <h4>Intensamente</h4>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="nosotros" class="nosotros-section">
+                <h3>Nosotros</h3>
+                <p>Quienes Somos</p>
+                <p>Cine es una publicación de Webedia para todos los amantes del cine y las series. Desde SensaCine se
+                    cubre toda la actualidad informativa relativa al lanzamiento de estrenos, así como dar servicio a
+                    través de nuestra cartelera y nuestra base de datos de películas y series, la más completa en
+                    castellano que se puede encontrar en la red. Lanzada en 2009, SensaCine es la web de cine y series
+                    más leída del mundo en castellano, siendo la líder absoluta de audiencia en España, según datos de
+                    Google Analytics.</p>
+                    <br>
+                    <p>A pesar de tener un gran grupo de seguidores leales que se habían acumulado desde su estreno, la serie, que era una secuela de la aclamada serie de los 80 A través del tiempo, se encontró en aguas inciertas. Aunque contrasta con la rápida renovación de la serie en diciembre de 2022, lo que generó un gran optimismo sobre el futuro de Quantum Leap.
+
+                        Lamentablemente, la serie ha sido cancelada por la sorpresa de sus fans. La historia se ambienta 30 años después de la misteriosa desaparición del Dr. Sam Beckett, con un nuevo grupo con el objetivo de desentrañar los enigmas de la máquina original y su creador.
+                        
+                        Gracias a una entrevista con Deadline el pasado mes de febrero, el creador de la serie, Martin Gero, admitió que no habían escrito el final de la temporada 2 como un punto y final, pero estaban contentos de que concluyera satisfactoriamente la acción de una manera que creían que complacería a la base de fans</p>
+            </section>
+            <br>
+            <section id="micuenta" class="micuenta-section">
+                <h3>Mi Cuenta</h3>
+                <p>Registrate y/o Accede</p>
+                <div>
+                    <!-- Formulario de logín -->
+                    <!-- más seguro,  - rápido, + carga datos -->
+                    <form action="login/checkLogin.html" method="post">
+                        <input type="text" name="usu" id="usu" placeholder="Usuario">
+                        <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                        <button type="submit">Iniciar sesión</button>
+                        <button type="submit">Registrarse</button>
+                    </form>
+
+                    <!-- form de registro -->
+                    <br><br>
+                    <div>
+                        <form action="login/checkRegistro.html" method="get">
+                            <fieldset>
+                                <legend><b>Datos Personales</b></legend>
+                                <input type="text" name="nom" id="nom" placeholder="Nombre" required>
+                                <input type="text" name="ape" id="ape" placeholder="Apellido" required>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                                <input type="date" name="" id="">
+                                <div>
+                                    <input type="number" name="DNI" id="" placeholder="DNI" required>
+                                </div>
+                                <input type="file" name="" id="">
+                                <button type="submit">Buscar</button>
+                                <br><br>
+                                <legend><b>¿Cuál es el género que más te gusta?</b></legend>
+                                <div>
+                                    <input type="checkbox" name="" id="">Comedia
+                                    <input type="checkbox" name="" id="">Romance
+                                    <input type="checkbox" name="" id="">Ficcion
+                                    <input type="checkbox" name="" id="">Suspenso
+                                    <input type="checkbox" name="" id="">Terror
+                                    <input type="checkbox" name="" id="">Kdrama
+                                    <input type="checkbox" name="" id="">Anime
+
+                                </div>
+                                <br>
+                                <div>
+                                    <legend><b>¿Cómo te percibis?</b></legend>
+                                    <br>
+                                    <select name="Como te Percibes" id="">
+                                        <option value="1">Mujer</option>
+                                        <option value="2">Hombre</option>
+                                        <option value="3">No binario</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div>
+                                    <button type="submit">Limpiar</button>
+                                    <button type="submit">Registrar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+            </section>
+        </article>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
