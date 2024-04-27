@@ -4,6 +4,11 @@ body {
     background-color: lightyellow
 }
 
+.carousel-img{
+    height: 400px;
+    width: 500px;
+}
+
 .header {
     display: flex;
     background-color: #050911;
@@ -13,18 +18,22 @@ body {
     font-size: 3rem;
     background: url(images/3dgifmaker93410.gif);
     background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
     background-position: center;
+    
     flex-direction: column;
     margin: 10px;
 }
 
-.header1 {
-    width: 30%;
-    height: 30%;
+.header1{
+    height: 300px;
+    width: 300px;
+    
 }
 
 .Container { 
-    position: absolute;
     left: 40%;
     top: 10%;
     padding: 10px;
@@ -44,11 +53,6 @@ body {
 
 .Barra-principal {
     position: absolute;
-    right: 40px;
-    top: 10px;
-    width: 0px;
-    height: 0px;
-    background: lightblue;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
@@ -56,9 +60,11 @@ body {
 }
 
 .Barra-principal i {
+    border-radius: 9999px;
+    background: lightblue;
     font-size: 20px;
     color: black;
-    line-height: 80px;
+    padding: 8px;
     transition: all .7 ease;
 }
 
@@ -76,7 +82,7 @@ body {
     -webkit-text-stroke: 2px red;
     background-image: linear-gradient(to left, red, rgb(226,33,33), black, rgb(35,31,31) );
     background-size: 200%;
-    /* -webkit-background-clip: text; */
+    background-clip: text; 
     animation: move 30s linear infinite;
 }
 
@@ -115,17 +121,8 @@ body {
     margin-bottom: 10px;
 }
 
-.menu ul{
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-}
 
-.menu li {
-    display: inline-block;
-}
-
-.menu a {
+.nav-link  {
     background-color: rgb(32, 129, 136);
     padding-left: 2rem;
     padding-right: 2rem;
@@ -188,6 +185,7 @@ button {
 .amazonp{
     width: 400px;
     height: 350;
+
 }
 .netflix{
     width: 400px;
@@ -286,16 +284,29 @@ button:hover {
     background: brown;
     color: white;
 }
-.h2 {
+h2, h3 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 5rem;
 }
-h3 {
+h4{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 5rem;
 }
+p{
+    text-align: justify;
+    font-family: 'Arial', sans-serif; /* Tipo de fuente */
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 1.6; /* Espacio entre líneas */
+    color: #333; /* Color del texto */
+    text-align: justify; /* Alineación del texto */
+    padding: 10px; /* Espaciado interno */
+    margin: 20px; /* Espaciado externo */
+    border: 1px solid #ccc; /* Borde alrededor del párrafo */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
 
 .noticia1{
     width: 350px;
@@ -322,6 +333,7 @@ padding-top: 60px;
 
 .noticias-section {
     padding-top: 60px;
+    display: flexbox;
 }
 
 .streaming-section {
@@ -337,20 +349,59 @@ padding-top: 60px;
 
 .series-section {
     padding-top: 60px;
-   padding-bottom: 60px;
+    padding-bottom: 60px;
     display: flexbox;
 }
+/* body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+} */
+
+.catalogo-series {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    gap: 10px; /* Espaciado entre imágenes */
+    padding: 20px;
+}
+
+.seriecat {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.seriecat img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.seriecat:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+@media (max-width: 800px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas pequeñas */
+    }
+}
+
 
 .cinekids-section {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .nosotros-section {
-    margin-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .micuenta-section {
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .trailers1 {
@@ -359,11 +410,11 @@ padding-top: 60px;
     height: 450px; 
     text-align: center; 
 }
-.cinekids{
+/* .cinekids{
     display: flex;
     justify-content: center;
     border-right: 1rem; 
-}  
+}   */
 
 .img-1 {
     display: inline;
@@ -420,6 +471,36 @@ padding-top: 60px;
     width: 250px;
     height: 250px;
     text-align: center;
+}
+
+#footer {
+    background-color: rgb(32, 129, 136);
+    height: 50px;
+    padding: 2rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li {
+    margin: 0 1rem 0 1rem;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: burlywood;
+    text-decoration: underline;
+}
+
+.bgModal {
+    background-color: #2a2a2a;
 }
 
 
