@@ -64,7 +64,9 @@
     <div class="texto">
         <article>
             <section id="cartelera" class="cartelera-section">
+                <div class="titulo_cartelera">
                 <h2>Cartelera</h2>
+                </div>
                 <div class="Container">
                     <div class="Barra-principal">
                         <input class="Barra" type="text" placeholder="Buscar">
@@ -105,9 +107,9 @@
                 </div>
                 <br>
                 <h3>Busca Tu Cine y compra las entradas</h3>
-                <form action="get">
-                    <div>
-                        <select name="cines" id="cines">
+                <form action="get" class="form_cines ">
+                    <div class="form_text">
+                        <select name="cines" id="cines" class="btn_buscar">
                             <option value="1">Buenos Aires</option>
                             <option value="2">CABA</option>
                             <option value="3">Catamarca</option>
@@ -133,7 +135,7 @@
                             <option value="23">Tierra del Fuego</option>
                             <option value="24">Tucumán</option>
                         </select>
-                        <button type="submit">Buscar</button>
+                        <button type="submit" class="buton_buscar">Buscar</button>
                     </div>
                 </form>
             </section>
