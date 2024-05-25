@@ -1,17 +1,30 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightyellow
+    /* background-color: lightyellow */
 }
 
 .carousel-img{
     height: 400px;
     width: 500px;
 }
+.body_principal{
+    color: #fff;
+    background: linear-gradient(45deg,rgb(172, 73, 73),rgb(24, 24, 214),rgb(53, 4, 145),black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
 
 .header {
     display: flex;
-    background-color: #050911;
+    background: #050911;
     padding: 3rem;
     text-align: center;
     color: rgb(128, 118, 99);
@@ -24,11 +37,14 @@ body {
     background-position: center;
     
     flex-direction: column;
-    margin: 10px;
+    margin: 0px;
+}
+.header__principal{
+    background: #333;
 }
 
 .header1{
-    height: 300px;
+    height: 280px;
     width: 300px;
     
 }
@@ -38,7 +54,9 @@ body {
     top: 10%;
     padding: 10px;
 }
-
+.navbar{
+    justify-content: end;
+}
 .Barra {
     outline: none;
     box-sizing: border-box;
@@ -52,7 +70,7 @@ body {
 }
 
 .Barra-principal {
-    position: absolute;
+    /* position: absolute; */
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
@@ -71,8 +89,8 @@ body {
 
 .titulobuscador {
     position: absolute;
-    left: 25%;
-    top: 20%;
+    left: 35%;
+    top: 2%;
     padding: 20px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -149,12 +167,13 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.texto {
-    background-color: rgb(32, 129, 136);
-    text-align: justify;
+/* .texto {
+    /* background-color: rgb(32, 129, 136); */
+    /* text-align: justify;
     padding: 1rem;
     margin: 1rem 3rem;
-}
+    
+} */ 
 
 button {
     border-radius: 0.5rem;
@@ -238,6 +257,7 @@ button:hover {
 }
 
 .card {
+    height: 460px;
     width: 100%;
     margin: 20px;
     border-radius: 6px;
@@ -297,12 +317,12 @@ p{
     font-family: 'Arial', sans-serif; /* Tipo de fuente */
     font-size: 16px; /* Tamaño de la fuente */
     line-height: 1.6; /* Espacio entre líneas */
-    color: #333; /* Color del texto */
+    color: #dfd6d6; /* Color del texto */
     text-align: justify; /* Alineación del texto */
     padding: 10px; /* Espaciado interno */
     margin: 20px; /* Espaciado externo */
-    border: 1px solid #ccc; /* Borde alrededor del párrafo */
-    background-color: #f9f9f9; /* Color de fondo */
+    /* border: 1px solid #ccc; Borde alrededor del párrafo */
+    /* background-color: #f9f9f9; Color de fondo */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
 }
@@ -389,14 +409,12 @@ padding-top: 60px;
 }
 
 
-.cinekids-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 
 .nosotros-section {
     padding-top: 60px;
     padding-bottom: 60px;
+  
 }
 
 .micuenta-section {
@@ -473,11 +491,6 @@ padding-top: 60px;
     text-align: center;
 }
 
-#footer {
-    background-color: rgb(32, 129, 136);
-    height: 50px;
-    padding: 2rem;
-}
 
 .links {
     display: flex;
@@ -502,6 +515,122 @@ padding-top: 60px;
 .bgModal {
     background-color: #2a2a2a;
 }
+/* footer */
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+  }
+  
+  .container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .container-body{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .colum1{
+    max-width: 400px;
+  }
+  
+  .colum1 h1{
+    font-size: 22px;
+  }
+  
+  .colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+  }
+  
+  .colum2{
+    max-width: 400px;
+    
+  }
+  
+  .colum2 h1{
+    font-size: 22px;
+  }
+  
+  .row {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  
+  .row img{
+    width: 50px;
+    height: auto;
+  }
+  
+  .row label{
+    
+    margin-top: -25px;
+    margin-left: 46px;
+    color: #C7C7C7;
+  }
+  
+  
+  .colum3{
+    max-width: 400px;
+  }
+  
+  .colum3 h1{
+    font-size: 22px;
+  }
+  
+  .row2{
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .row2 img{
+    width: 50px;
+    height: auto;
+  }
+  
+  .row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+  }
+  
+  .container-footer{
+    width: 100%;  
+    background: #101010;
+  }
+  
+  .footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+  }
+  
+  .copyright{
+    color: #C7C7C7;
+  }
+  
+  .copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .information a{
+    text-decoration: none;
+    color: #C7C7C7;
+  }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+  /* seccionn trailers  */
+  .trailers_pelis{
+    display: flex;
+    justify-content:space-evenly ;
+  }
