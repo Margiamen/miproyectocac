@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Grupo 6</title>
+    <link rel="stylesheet" href="peliculas.css">
+    <link rel="icon" href="/miproyectocac/images/Logoico.ico">
+    <script src="https://kit.fontawesome.com/8dfe046610.js" crossorigin="anonymous"></script>
+
+    <!-- google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body class="body_principal">
+
+    <div class="header">
+        <img class="header1" src="/miproyectocac/images/Logo sin fondo.png" alt="Logo cine">
+
+        <h2 class="titulobuscador">CineFan hecho para Fans</h2>
+
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <div class="container-fluid">
+            <!-- Marca y botón de hamburguesa -->
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end mx-4" id="navbarNav">
+                <ul class="navbar-nav ">
+                    
+                    
+                    <li class="nav-item"><a class="nav-link mx-3" href="/miproyectocac/index.html">Inicio</a></li>
+
+                    <li class="nav-item"><a class="nav-link mx-3" href=""
+                            class="d-flex align-items-center btn btn-outline-warning" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdropLogin">Mi Cuenta</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3" href="" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdropRegistro">Registro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <article>
+            <section id="cartelera" class="cartelera-section">
+                <div class="titulo_cartelera">
+                <h2>Peliculas</h2>
+                </div>
+            </section>
+            <section><div class="container">
+                <div>
+                    <button class="btn btn-primary start-50 translate-middle " onclick="getPelis()">Desplegar catalogo de Peliculas</button>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Título</th>
+                            <th scope="col">Año</th>
+                            <th scope="col">Puntaje</th>
+                            <th scope="col">Portada</th>
+                        </tr>
+                    </thead>
+                    <tbody id="peliculas">
+                    </tbody>
+                </table>
+            </div>
+            <div class="Container">
+                <div class="Barra-principal">
+                    <input class="Barra" type="text" placeholder="Busca tu peli...">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </section>
+            
+
+
+    <footer>
+        <div class="container-footer-all">
+
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>Mas informacion de la compañia</h1>
+
+                    <p>Esta pagina esta diseñada para ver las peliculas que quieras .Para mas info por dudas TE DEJAMOS
+                        NUESTRAS REDES</p>
+
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <img src="/miproyectocac/images/imagen-facebok.png">
+                        <label><a href="#">Siguenos en Facebook</a></label>
+                    </div>
+                    <div class="row">
+                        <img src="/miproyectocac/images/imagen-twiter.png">
+                        <label><a href="#">Siguenos en Twitter</a></label>
+                    </div>
+                    <div class="row">
+                        <img src="/miproyectocac/images/imagen-instagram.png">
+                        <label><a href="#">Siguenos en Instagram</a></label>
+                    </div>
+
+
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Informacion Contactos</h1>
+
+                    <div class="row2">
+                        <img src="/miproyectocac/images/imegen-house.png">
+                        <label>Cordoba-Capital</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="/miproyectocac/images/imagen-celular.png">
+                        <label>xxxx-xxxx</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-footer">
+            <div class="footer">
+                <div class="copyright">
+                    © 2024 Todos los Derechos Reservados | <a>GRUPO 6</a>
+                </div>
+
+                <div class="information">
+                    <a href="#">Informacion Compañia</a> | <a href="#">Privacion y Politica</a> | <a href="#">Terminos
+                        y Condiciones</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"        crossorigin="anonymous"></script>
+        <script src="llamadaPelis.js"></script>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
