@@ -1,0 +1,51 @@
+CREATE DATABASE java24119;
+
+CREATE TABLE Pelicula (
+  id SERIAL PRIMARY KEY,
+  titulo VARCHAR(50) NOT NULL,
+  anio DATE DEFAULT NULL,
+  puntuacion FLOAT DEFAULT NULL,
+  portada VARCHAR(500) NOT NULL,
+  tipo VARCHAR(10) NOT NULL CHECK (tipo IN ('pelicula', 'serie')),
+  categoria_id INT,
+  FOREIGN KEY (categoria_id) REFERENCES Categorias(id)
+);
+
+-- Crear tabla TipoPelicula            #YA NO SE VA A NECESITAR PORQUE SE ESPECIFICA EN PELICULA
+CREATE TABLE TipoPelicula (
+  id SERIAL PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL
+);
+
+-- Crear tabla Categorias (asumiendo que esta tabla debe existir)
+CREATE TABLE Categorias (
+  id SERIAL PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL
+);
+
+-- Crear tabla PeliculaCategoriaDt
+CREATE TABLE PeliculaCategoriaDt (
+  pelicula_id INT NOT NULL,
+  categoria_id INT NOT NULL,
+  PRIMARY KEY (pelicula_id, categoria_id),
+  FOREIGN KEY (pelicula_id) REFERENCES Pelicula(id),
+  FOREIGN KEY (categoria_id) REFERENCES Categorias(id)
+);
+
+Tabla java24119: Incluirá una columna para el tipo.
+Tabla Categorias: Para almacenar las diferentes categorías.
+Tabla PeliculaCategoria: Para manejar la relación muchos-a-muchos entre las películas y las categorías.
+
+INSERT INTO Categorias (nombre) VALUES ('Accion'), ('Comedia'), ('Drama'), ('Ci-Fic'), ('Horror'), ('Romantica'), ('Mis-Sus'), ('Fantasia');
+
+---------------------------------------
+ejemplo: (se usa el archivo de peliculas.sql)
+INSERT INTO `peliculas` (`id`, `tituto`, `anio`, `puntuacion`, `portada`) VALUES
+(1, 'The Shawshank Redemption', '1994-09-23', 8.705, 'https://www.themoviedb.org/t/p/w220_and_h330_face//9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg'),
+(2, 'The Godfather', '1972-03-14', 8.7, 'https://www.themoviedb.org/t/p/w220_and_h330_face//3bhkrj58Vtu7enYsRolD1fZdja1.jpg');
+COMMIT;
+
+
+-------------------
+Base de datos.txt
+como se hizo en un inicio, algunas modificaciones luego.

@@ -1,0 +1,23 @@
+Resumen de los pasos:
+Cambiar al directorio raíz del proyecto:
+
+cd D:\javafinal\java
+Compilar el archivo Java:
+
+javac src\main\java\laruta\App.java
+Ejecutar la clase compilada:
+
+java -cp src\main\java laruta.App
+-----------------------------------------
+
+Para que funcione PostgreSQLConnector.java:
+
+cd D:\javafinal\java
+
+mvn clean compile
+
+mvn test
+
+mvn package
+
+mvn exec:java
