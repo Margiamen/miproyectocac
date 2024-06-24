@@ -1,4 +1,4 @@
-package com.codoacodo;
+package com.codoacodo.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
