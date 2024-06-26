@@ -1,4 +1,4 @@
-package com.codoacodo;
+package com.codo;
 
 import static org.junit.Assert.assertTrue;
 
