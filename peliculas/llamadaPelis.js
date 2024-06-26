@@ -21,11 +21,11 @@ function renderPelis(data) {
     for(let peli of peliculas) {
         rows += `
         <tr>
-            <td>${peli.title}</th>
-            <td>${peli.release_date}</td>
-            <td>${peli.vote_average}</td>
-            <td>
-                <img src="https://image.tmdb.org/t/p/w500/${peli.poster_path}" class="img-fluid w-25">
+            <td class=bg-primary>${peli.title}</th>
+            <td class=bg-primary>${peli.release_date}</td>
+            <td class=bg-primary>${peli.vote_average}</td>
+            <td class=bg-primary>
+                <img src="https://image.tmdb.org/t/p/w500/${peli.poster_path}" class="img-fluid w-25 ">
             </td>
         </tr>
         `

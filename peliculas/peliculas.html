@@ -57,34 +57,35 @@
         </div>
     </nav>
     <article>
+        <div class="Container">
+            <div class="Barra-principal">
+                <input class="Barra" type="text" placeholder="Busca tu peli...">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
             <section id="cartelera" class="cartelera-section">
                 <div class="titulo_cartelera">
                 <h2>Peliculas</h2>
                 </div>
             </section>
             <section><div class="container">
-                <div>
-                    <button class="btn btn-primary start-50 translate-middle " onclick="getPelis()">Desplegar catalogo de Peliculas</button>
+                <div class="btn-catalogopeli">
+                    <button class="btn btn-danger  " onclick="getPelis()">Desplegar catalogo de Peliculas</button>
                 </div>
                 <table class="table">
                     <thead>
-                        <tr>
-                            <th scope="col">Título</th>
-                            <th scope="col">Año</th>
-                            <th scope="col">Puntaje</th>
-                            <th scope="col">Portada</th>
+                        <tr >
+                            <th scope="col" class="bg-primary  text-center">Título</th>
+                            <th scope="col"class="bg-primary text-caenter">Año</th>
+                            <th scope="col"class="bg-primary text-center">Puntaje</th>
+                            <th scope="col" class="bg-primary text-center">Portada</th>
                         </tr>
                     </thead>
                     <tbody id="peliculas">
                     </tbody>
                 </table>
             </div>
-            <div class="Container">
-                <div class="Barra-principal">
-                    <input class="Barra" type="text" placeholder="Busca tu peli...">
-                    <i class="fa fa-search"></i>
-                </div>
-            </div>
+       
         </section>
             
 
