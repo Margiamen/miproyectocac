@@ -1,4 +1,4 @@
-package com.codo.model;
+package com.codo;
 
 
 
@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.List;
 
 import com.codo.dao.PeliculaDAO;
+import com.codo.model.pelicula;
 
 /**
  * Hello world!
