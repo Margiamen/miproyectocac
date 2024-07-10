@@ -1,13 +1,13 @@
-package com.codo;
+package com.codo.model;
 
 
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 import com.codo.dao.PeliculaDAO;
-import com.codo.db.ConnectorDB;
 
 /**
  * Hello world!
@@ -19,11 +19,14 @@ public class App
         
         try {
             PeliculaDAO peliculaDAO=new PeliculaDAO();
-            peliculaDAO.listar();
+            List<pelicula>listPeli=peliculaDAO.listar();
+             for (pelicula peli : listPeli){
+                System.out.println(peli.getId()+"-"+peli.getTitulo());
+             }
 
         } catch (Exception e) {
             
             e.printStackTrace();
         }
     }
-}
+};
